@@ -1,0 +1,35 @@
+// Define variables
+$navbar-height: 60px;
+$logo-width: 100px;
+$icons-padding: 20px; // Adjust the padding between the icons
+
+// Styles for the navbar
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $navbar-height;
+  padding: 20px 40px; // Add padding to top and bottom
+  color: #100f0f;
+
+  // Styles for the logo
+  .logo {
+    display: flex;
+    align-items: center;
+    max-width: $logo-width;
+    padding-right: 40px; // Add right padding to the logo
+    height: auto;
+  }
+
+  // Styles for the icons
+  .icons {
+    display: flex;
+    align-items: center;
+    color: black;
+
+    // Space between icons
+    > *:not(:last-child) {
+      margin-right: $icons-padding;
+    }
+  }
+}

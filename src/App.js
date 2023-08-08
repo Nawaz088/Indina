@@ -1,10 +1,14 @@
-import './App.css';
-import Top_navbar from './components/top_navbar';
+import './App.scss';
+import Slider from './components/Slider';
+import Navbar from './components/Navbar';
+import Cards from "./components/Cards";
 function App() {
   return (
-    <>
-      <Top_navbar />
-    </>
+    <div>
+      <Slider />
+      <Navbar />
+      <Cards />
+    </div>
   );
 }
 
